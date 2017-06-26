@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <p>Hello World!</p>
-    Name: <input type="text" id="myText" value="your name here" maxlength="25">
-    <button onclick="">CLICK ME</button>
-    
-  </body>
+    <head>
+        <title>Hey You Made It!</title>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+    </head>
+    <body>
+        Please Enter Your:<br> <input type="text" id="name" size="20">
+        <button onclick="myFunction()">Click me</button>
+
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                text = document.getElementById("name");
+                console.log(text.value);
+                document.getElementById("demo").innerHTML = text.value;
+            }
+        </script>
+    </body>
 </html>
